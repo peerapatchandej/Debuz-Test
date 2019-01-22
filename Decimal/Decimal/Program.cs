@@ -95,8 +95,6 @@ namespace Decimal
             }
 
             Console.WriteLine("Answer : " + answer + "\n");
-            Console.WriteLine("Press enter to close...");
-            Console.ReadLine();
         }
 
         static void FindRecurringCount()
@@ -172,11 +170,15 @@ namespace Decimal
                             Console.WriteLine("Can not find answer.\n");
                         }
                     }
-
-                    Console.WriteLine("Press enter to close...");
-                    Console.ReadLine();
                 }
             }
+            else
+            {
+                Console.WriteLine("Answer : 0\n");
+            }
+
+            Console.WriteLine("Press enter to close...");
+            Console.ReadLine();
         }
 
         static bool PrimeNumber(decimal number)

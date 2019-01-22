@@ -5,3 +5,10 @@ E:\Bright\Debuz Test\Master Mind\Master Mind\obj\Debug\Master Mind.csprojAssembl
 E:\Bright\Debuz Test\Master Mind\Master Mind\obj\Debug\Master Mind.csproj.CoreCompileInputs.cache
 E:\Bright\Debuz Test\Master Mind\Master Mind\obj\Debug\Master Mind.exe
 E:\Bright\Debuz Test\Master Mind\Master Mind\obj\Debug\Master Mind.pdb
+E:\Bright\Debuz-Test\Master Mind\Master Mind\bin\Debug\Master Mind.exe.config
+E:\Bright\Debuz-Test\Master Mind\Master Mind\bin\Debug\Master Mind.exe
+E:\Bright\Debuz-Test\Master Mind\Master Mind\bin\Debug\Master Mind.pdb
+E:\Bright\Debuz-Test\Master Mind\Master Mind\obj\Debug\Master Mind.csprojAssemblyReference.cache
+E:\Bright\Debuz-Test\Master Mind\Master Mind\obj\Debug\Master Mind.csproj.CoreCompileInputs.cache
+E:\Bright\Debuz-Test\Master Mind\Master Mind\obj\Debug\Master Mind.exe
+E:\Bright\Debuz-Test\Master Mind\Master Mind\obj\Debug\Master Mind.pdb

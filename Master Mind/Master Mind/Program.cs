@@ -9,6 +9,7 @@ namespace Master_Mind
         static Random rand = new Random();
         static List<int> tempNumber = new List<int>();
         static List<int> randNumber = new List<int>();
+        static bool[] isCheck = new bool[] { false, false, false, false };
         static int[] inputNumber = new int[4];
         static int predictNum = 0;
         static int predictPos = 0;
@@ -56,14 +57,22 @@ namespace Master_Mind
 
                 if (regex.IsMatch(input))
                 {
-                    for (int i = 0; i < inputNumber.Length; i++)
+                    if (input.Length == 4)
                     {
-                        inputNumber[i] = int.Parse(input.Substring(i, 1));
+                        for (int i = 0; i < inputNumber.Length; i++)
+                        {
+                            inputNumber[i] = int.Parse(input.Substring(i, 1));
+                        }
+
+                        valid = true;
+                    }
+                    else
+                    {
+                        valid = false;
+                        Console.WriteLine("\nplease try again.\n");
                     }
 
-                    valid = true;
-
-                    //Console.Write(inputNumber[0] + " " + inputNumber[1] + " " + inputNumber[2] + " " + inputNumber[3]);
+                    //Console.WriteLine(inputNumber[0] + " " + inputNumber[1] + " " + inputNumber[2] + " " + inputNumber[3]);
                 }
                 else
                 {
@@ -78,6 +87,11 @@ namespace Master_Mind
             {
                 Console.WriteLine("////////////////////////////////////////////\n");
 
+                for(int i = 0; i < isCheck.Length; i++)
+                {
+                    isCheck[i] = false;
+                }
+
                 predictNum = 0;
                 predictPos = 0;
 
@@ -85,11 +99,21 @@ namespace Master_Mind
 
                 for (int i = 0; i < inputNumber.Length; i++)
                 {
-                    if (randNumber.Contains(inputNumber[i]))
-                    {
-                        predictNum++;
+                    int index = randNumber.IndexOf(inputNumber[i]);
 
-                        if (randNumber.IndexOf(inputNumber[i]) == i)
+                    if (index != -1 )
+                    {
+                        if (!isCheck[index])
+                        {
+                            isCheck[index] = true;
+                            predictNum++;
+
+                            if (randNumber.IndexOf(inputNumber[i]) == i)
+                            {
+                                predictPos++;
+                            }
+                        }
+                        else if (randNumber.IndexOf(inputNumber[i]) == i)
                         {
                             predictPos++;
                         }
