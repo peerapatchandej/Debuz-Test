@@ -71,15 +71,16 @@ public class UIChat : MonoBehaviour
   {
     if (_User.ContainsKey(uid))
     {
-      _User.Remove(uid);
+        _User.Remove(uid);
+
+        if (text.ContainsKey(uid.ToString()))
+        {
+            text.Remove(uid.ToString());
+        }
 
         if (playerDes != "group")
         {
-            if (int.Parse(playerDes) == uid)
-            {
-                text.Remove(playerDes);
-                RetrieveText("group");
-            }
+            RetrieveText("group");
         }
     }
   }

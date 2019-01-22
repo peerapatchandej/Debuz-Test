@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-E:/Bright/Debuz Test/debuz_developer/debuz_developer/Build/client.exe
+E:/Bright/Debuz-Test/debuz_developer/debuz_developer/Build/client.exe
 SceneListBegin?
 Assets/Scenes/Login.unity
 Assets/Scenes/Chat.unity
